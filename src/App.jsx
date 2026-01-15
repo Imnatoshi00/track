@@ -111,25 +111,12 @@ export default function App() {
           <div className="app">
             <h3>History</h3>
             <ul>
-          <ul>
-  {expenses.map((e, i) => (
-    <li
-      key={i}
-      className="flex justify-between items-center py-2 border-b"
-    >
-      <span>{e.desc}</span>
-
-      <span className="font-semibold">
-        ₹ {e.amount}
-      </span>
-
-      <span className="text-sm text-gray-500">
-        {e.date}
-      </span>
-    </li>
-  ))}
-</ul>
-
+              {expenses.map((e, i) => (
+                <li key={i}>
+                  <span classname ="desc">{e.desc}</span> – <span classname ="ammount">₹{e.amount}</span>
+                  <span className="date">{e.date}</span>
+                </li>
+              ))}
             </ul>
           </div>
         </Section>
