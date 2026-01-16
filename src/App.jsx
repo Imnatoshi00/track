@@ -48,7 +48,7 @@ export default function App() {
       {section === "home" && (
         <Section bg="/home.jpg">
           <div className="app">
-            <h2>Expense Tracker</h2>
+            <h2>Pocket Pal</h2>
             <p>Managing money becomes easier when you track it properly.</p>
             <p>This app helps you record daily expenses with ease.</p>
             <p>You can set weekly budgets to control overspending.</p>
