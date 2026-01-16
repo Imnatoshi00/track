@@ -69,7 +69,7 @@ button:focus-visible {
 .history-item 
 {
   display: flex;
-  gap:2px;
+  gap:12px;
   align-items:center;
 }
 .amount 

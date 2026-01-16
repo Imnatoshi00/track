@@ -106,21 +106,22 @@ export default function App() {
       )}
 
       {/* HISTORY */}
-      {section === "history" && (
-        <Section bg="/history.jpg">
-          <div className="app">
-            <h3>History</h3>
-            <ul>
-              {expenses.map((e, i) => (
-                <li key={i}>
-                  <span classname ="desc">{e.desc}</span> – <span classname ="ammount">₹{e.amount}</span>
-                  <span className="date">{e.date}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
-        </Section>
-      )}
+{section === "history" && (
+  <Section bg="/history.jpg">
+    <div className="app">
+      <h3>History</h3>
+      <ul className="list-disc pl-5">
+        {expenses.map((e, i) => (
+          <li key={i} className="mb-2">
+            <span className="font-medium">{e.desc}</span> –{" "}
+            <span className="text-green-700">₹{e.amount}</span>{" "}
+            <span className="text-gray-500 ml-2">{" "}{e.date}</span>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </Section>
+)}
 
       {/* ANALYTICS */}
       {section === "analytics" && (
